@@ -27,23 +27,6 @@ class App extends Component {
         books: state.books.filter((b) => b.id !== book.id).concat([book])
       }))
     })
-
-    // let isNew = true
-    // for (let b of this.state.books) {
-    //   if (b.id === book.id) {
-    //     isNew = false
-    //   }
-    // }
-
-    // if (isNew) {
-    //   this.setState((state) => ({
-    //     books: state.books.concat([ Object.assign({}, book, {shelf: shelf}) ])
-    //   }))
-    // } else {
-    //   this.setState((state) => ({
-    //     books: state.books.map((b) => b.id === book.id ? Object.assign({}, b, {shelf: shelf}) : b )
-    //   }))
-    // }
     
   }
 
